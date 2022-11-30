@@ -10,5 +10,6 @@ changeColorBtnRef.addEventListener("click", onChangeColor);
 
 function onChangeColor(event) {
   bgColorRef.textContent = getRandomHexColor();
-  bodyRef.style.backgroundColor = getRandomHexColor();
+  let newColor = bgColorRef.textContent;
+  bodyRef.style.backgroundColor = newColor;
 }
